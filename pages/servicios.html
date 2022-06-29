@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinámica de planta y Simuladores</title>
+
+    <!-- Ícono de pestaña -->
+    <link rel="shortcut icon" href="../media/Logo_DDPYS_v2.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!--Esto va arriba de la página web-->
+        <img id="logo_DDPyS" src="../media/Logo_DDPYS_v2_narrow.png" alt="Logo DDP&S" width="80px" height="120">
+        <section class="titles">
+            <h1>Departamento de Dinámica de planta - Simuladores</h1>
+            <h2>Centro Atómico Bariloche</h2>
+        </section>
+        <img class="logo" src="../media/logo_CNEA_texto.png" alt="Logo CNEA" width="120px" height="120">              
+        <img class="logoMobile" src="../media/logo_CNEA_vectorial.png" alt="Logo CNEA" width="120px" height="120px">               
+    </header>
+    <nav id="desktopNav">
+        <!-- Lista Desordenada de enlaces relativos -->
+        <ul class="navMenu">
+            <li><a class="menuItem" href="../index.html">Inicio</a></li>
+            <li class="division">|</li>
+            <li><a class="menuItem" href="quienes_somos.html">Quiénes somos</a></li>
+            <li class="division">|</li>
+            <li><a class="menuItem" href="servicios.html">Servicios</a></li>
+            <li class="division">|</li>
+            <li><a class="menuItem" href="experiencia.html">Experiencia</a></li>
+            <li class="division">|</li>
+            <li><a class="menuItem" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav id="mobileNav">
+        <!-- Listas -->
+        <!-- Lista Desordenada de enlaces relativos -->
+        <div class="mainMenuMobile">
+            <span class="menuBurguerButton"> Menú principal</span>
+            <span class="division">|</span>
+            <form class="searchBarMobile">
+                <input class="searchBarButton" type="image" src="../media/search_button.png" width="70px" height="35px">
+            </form>
+        </div>
+        <ul class="menuBurguer">
+            <li><a class="menuItem" href="../index.html">Inicio</a></li>
+            <li class="division">|</li>
+            <li><a class="menuItem" href="quienes_somos.html">Quiénes somos</a></li>
+            <li class="division">|</li>
+            <li><a class="menuItem" href="servicios.html">Servicios</a></li>
+            <li class="division">|</li>
+            <li><a class="menuItem" href="experiencia.html">Experiencia</a></li>
+            <li class="division">|</li>
+            <li><a class="menuItem" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <!-- Barra de búsqueda -->
+        <form class="searchBar" action="" method="GET" enctype="multipart/form-data">
+            <input class="searchField" type="text" placeholder="Buscar en el sitio">
+            <input type="image" src="../media/search_button.png" width="40" height="20">
+        </form>
+        <br>
+        <!--Boton quiero trabajar con DDP&S-->
+        <a class="enfasisButton" href="contacto.html">Quiero contratar un servicio</a> 
+        <!--Si es posible, dentro del alcance del curso, sería bueno que ya rellene automáticamente algunos campos si se accede a contacto desde este botón-->      
+        <br>
+    </aside>
+    <article>
+        <a class="enfasisButtonBody" href="contacto.html">Quiero contratar<br>un servicio</a> 
+        <p>
+        Nuestro equipo esta altamente capacitado para resolver prblemas de ingeniería relacionados con
+        el desarrollo de software de simuladores de reactores nucleares, desde su arquitectura, bases de datos,
+        modelos físicos, hasta su interfaz humano máquina (HMI).
+        </p>
+        <p>
+        Ofrecemos una amplia gama de servicios para adecuarnos a la necesidad de cada cliente.
+        </p>
+        <!--quizas se pueden agregar algunos dibujitos aca para hacerlo mas dinámico en la parte de css-->
+        <ol>
+            <li class="servicio">
+                <div class="servicioTitle">Simuladores de alcance total "Fullscope"</div>
+                <p>El producto final esperado en general es un simulador de tipo Fullscope en el cual está emulado el sistema
+                de control del reactor. Se alimentan a este sistema de control todas las señales provenientes de la planta, que se 
+                obtienen a partir de modelos elaborados usando las herramientas Relap5 y Matlab-Simulink asi como herramientas de elaboración 
+                propia.</p>
+            </li>
+            <li class="servicio">
+                <div class="servicioTitle">Simuladores de verificación de ingeniería</div>
+                <p>En general se demanda este tipo de simulador en etapas previas de la ingeniería para verificar el diseño de reactor propuesto
+                en diferentes maniobras operativas. Si bien no es un simulador de alcance total, es decir que el sistema de control no está emulado,
+                posee un modelo ad-hoc del sistema de control con la representación de las principales señales para poder monitorear las principales 
+                variables de proceso.
+                </p>
+            </li>
+            <li class="servicio">
+                <div class="servicioTitle">Simuladores educacionales</div>
+                <p>Pueden ser de alcance total o no. La diferencia fundamental es que poseen una arquitectura que permite simular un mismo transitorio
+                en diferentes pantallas. Estan orientados al entrenamiento de operarios. En este tipo de simulador, un "instructor" puede preparar un 
+                transitorio para que los "alumnos" realicen las acciones necesarias en sus pantallas de HMI. El instructor puede, además, introducir diferentes
+                fallas del sistema de control o de la planta, para capacitar a los operarios en cuanto a cómo actuar ante ellas.
+                </p>
+            </li>
+            <li class="servicio">
+                <div class="servicioTitle">Evaluaciones de dinámica de planta y diseño de lazos de control</div>
+                <p>Como subproducto de los simuladores de verificación de la ingeniería, usando este tipo de simuladores nuestro equipo es capaz de 
+                analizar los transitorios principales de la planta, como pueden ser las maniobras de arranque y parada y la resolución de eventos iniciantes.
+                Este servicio es de vital importancia en las etapas de diseño del reactor, para poder conocer cómo actúan los componentes y equipos seleccionados en conjunto con 
+                toda la planta y detectar la necesidad de realizar cambios a la ingeniería de forma temprana. Además el equipo cuenta con amplia experiencia en el área de 
+                instrumentación y control y tiene la capacidad de diseñar y tunear lazos de control en caso de ser necesario.
+                </p>
+            </li>
+        <!-- No lo ofrecemos puntualmente pero por ahi sirve para la parte de formulario-->
+        <!--<li> 
+            <b>Software y herramientas para el desarrollo de simuladores</b>
+            <br>A través de años de experiencia en el área, nuestro equipo desarrollo un conjunto de herramientas para facilitar el proceso
+            de la elaboración de simuladores de reactores nucleares. Ofrecemos la posibilidad de acceder a las mismas.
+        </li>-->
+        </ol>
+    </article>
+    <footer id="pie">
+            Copyright © 2022 Dinámica de planta & Simuladores | CAB - CNEA
+    </footer>
+</body>
+
+</html>
