@@ -61,7 +61,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.4s ease-in;
+    transition: all 0.4s ease-in;
     position: relative;
     /*width: 250px;*/
     padding-left: 1px;
@@ -164,7 +164,7 @@ aside{
 }
 .enfasisButton{
     grid-area: enfButton;
-    transition: 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .enfasisButton:hover{
