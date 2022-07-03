@@ -55,6 +55,44 @@ nav{
 /*.menuItem,.division,*/nav,.button{
     background-image: linear-gradient(rgb(56, 131, 152),rgb(43, 103, 119),rgb(34, 90, 104));
 }
+.navButton,.navButtonDiv{
+    height: 98px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in;
+    position: relative;
+    /*width: 250px;*/
+    padding-left: 1px;
+    border: none;
+    /*background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));*/
+}
+
+.navButton:hover,.navButtonDiv:hover{
+    background-color: rgba(255, 255, 255, 0.03);
+    /*background-image: linear-gradient(rgb(255, 255, 255, 0.00),rgb(255, 255, 255, 0.1),rgb(255, 255, 255, 0.00));*/
+    /*border-radius: 30px;*/
+    box-shadow:0px 0px 30px rgb(0,0,0,10%);
+    /*border: 2px solid white;*/
+    /*overflow: hidden;*/
+}
+
+.navButtonDiv:after {/*pseudo element*/
+    content: "";
+    border-right: white 2px solid;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 0px;
+    opacity: 70%;
+}
+
+.navButtonDiv:hover:after{
+    opacity:100%;
+    /*top: 48px;
+    bottom: 48px;*/
+}
 
 .menuItem,.menuBurguerButton{
     padding: 0px 100px 0px 100px;
@@ -126,6 +164,12 @@ aside{
 }
 .enfasisButton{
     grid-area: enfButton;
+    transition: all 0.2s ease-in-out;
+}
+
+.enfasisButton:hover{
+    font-size: 18px;
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.7);
 }
 
 .fieldTitle{
