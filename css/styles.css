@@ -6,6 +6,15 @@
     font-family:'Inter';
 }
 
+/*color palette*/
+:root{
+    --dark-teal-gradient:linear-gradient(rgb(56, 131, 152),rgb(43, 103, 119),rgb(34, 90, 104));
+    --dark-teal:rgb(43, 103, 119);
+    --dark-teal-transparent-50:rgb(43, 103, 119,50%);
+    --light-grey:rgb(217,217,217);
+}
+
+
 /*:visited,:link{
     color: white;
     text-decoration:none;
@@ -53,7 +62,7 @@ nav{
 }
 
 /*.menuItem,.division,*/nav,.button{
-    background-image: linear-gradient(rgb(56, 131, 152),rgb(43, 103, 119),rgb(34, 90, 104));
+    background-image: var(--dark-teal-gradient);
 }
 .navButton,.navButtonDiv{
     height: 98px;
@@ -213,7 +222,7 @@ h4{
 }
 
 input,select,textarea{
-    background-color: rgb(217,217,217);
+    background-color: var(--light-grey);
 }
 
 .searchField{
@@ -298,13 +307,6 @@ footer{
     background-color: rgb(217,217,217,75%);
 }
 
-.card,.proyectCard{
-    background-color:rgb(43, 103, 119, 50%);
-    display: flex;
-    flex-direction: row;
-    border-radius: 40px;
-    margin:10px 10px 10px 10px;
-}
 
 h5,h6{
     font-family: 'Oswald';
@@ -401,6 +403,50 @@ form{
     font-size: x-large;
 }
 
+/*hover de los botones y del nav*/
+.menuItem:hover{
+    color: white;
+    font-weight: 400;
+}
+
+/* accordion en página quiénes somos */
+#accordionQuienesSomos{
+    margin: 0px 10px 10px 10px;
+    background-color: rgb(0,0,0,0%);
+}
+
+.accordion-body{
+    background-color: white;
+    /*margin: 10px 10px 10px 10px;*/
+}
+
+.accordion-header{
+    display: flex;
+    justify-content: center;
+}
+
+.accordion-button{
+    /*background-image: var(--dark-teal-gradient);*/
+    background-image: linear-gradient(rgb(56, 131, 152,0.8),rgb(43, 103, 119,0.8),rgb(34, 90, 104,0.8));
+    color: white;
+    font-family: 'Inter';
+    font-size: x-large;
+    font-weight: 200;
+    padding: 30px 30px 30px 30px;
+}
+
+.accordion-button:active,.accordion-button:focus{
+    color:white;
+    font-weight: 400;
+}
+
+.accordion-button:checked,.accordion-button:focus-visible,.accordion-button:visited{
+    color: white;
+}
+
+.profileData{
+    width: auto;
+}
 
 @media screen and (min-width: 320px) {
     body{
@@ -446,12 +492,19 @@ form{
     .card{
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        background-color: var(--dark-teal-transparent-50);
+        border-radius: 30px;
+        margin: 5px 5px 5px 5px;
         /*justify-content: space-evenly;*/
     }
+
     .profilePicture{
         margin: 10px 10px 0px 10px;
     }
     .profileData{
+        width: 95%;
+        height: auto;
         margin: 10px 10px 10px 10px;
     }
     .proyectData{
@@ -551,6 +604,21 @@ form{
     .carouselCaptionMobile{
        display: none;
     }
+    .proyectCard,.card{
+        flex-direction: row;
+    }
+    .card{
+        width: 750px;
+        background-color: var(--dark-teal-transparent-50);
+        margin: 5px 5px 5px 5px;
+        border-radius: 30px;
+    }
+    .profileData{
+        letter-spacing: 2px;
+        width: 70%;
+        height: auto;
+        margin: 10px 10px 10px 10px;
+    }
 
 }
 
@@ -604,12 +672,7 @@ form{
     .bodyTitle{
         font-size: medium;
     }
-    .proyectCard,.card{
-        flex-direction: row;
-    }
-    .card{
-        width: 750px;
-    }
+
     .proyectData{
         margin: 20px 20px 20px 0;
     }
@@ -650,11 +713,6 @@ form{
     }
     .profilePicture,.reactorLogo,.reactorLogoVectorial{
         margin: 20px 10px 20px 20px;
-    }
-    .profileData{
-        letter-spacing: 2px;
-        width: 450px;
-        height: 110px;
     }
     .proyectCard{
         width: 700px
