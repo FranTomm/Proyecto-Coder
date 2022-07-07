@@ -172,6 +172,11 @@ aside{
     box-shadow: 0 0 20px rgba(255, 166, 0, 0.7);
     border-radius: 100px;
     letter-spacing: 0px;
+    color: white;
+}
+
+.enfasisButton:active{
+    color: white/*!important*/;
 }
 
 .fieldTitle{
@@ -183,6 +188,7 @@ aside{
     padding: 20px 30px 20px 30px;
     border-radius: 80px;
     margin: 30px 20px 30px 20px;
+    width: 75%;
 }
 h1{
     font-weight: bolder !important;
