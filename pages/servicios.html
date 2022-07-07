@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinámica de planta y Simuladores</title>
-
+    <!-- link de bootstrap -->
+    <!--tiene que ir ARRIBA del link a nuestro stylesheet para poder pisar los estilos nativos de bootstrap-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+    />
     <!-- Ícono de pestaña -->
     <link rel="shortcut icon" href="../media/Logo_DDPYS_v2.png">
     <link rel="stylesheet" href="../css/styles.css">
@@ -47,27 +54,49 @@
             </li>
         </ul>
     </nav>
-    <nav id="mobileNav">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mobileNav" ><!--comentario para ejemplo github--> 
         <!-- Listas -->
         <!-- Lista Desordenada de enlaces relativos -->
-        <div class="mainMenuMobile">
-            <span class="menuBurguerButton"> Menú principal</span>
-            <span class="division">|</span>
-            <form class="searchBarMobile">
-                <input class="searchBarButton" type="image" src="../media/search_button.png" width="70px" height="35px">
-            </form>
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#"></a> -->
+            <div class="mainMenuMobile">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo04" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    Menú principal<!--cómo evito que se forme un recuadro blanco cuando lo cliqueo?-->
+                </button>
+                | <!-- divisor provisorio-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo05" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <input type="image" src="../media/search_button.png" height="40px" width="80">
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo04">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes_somos.html">Quiénes somos</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="servicios.html">Servicios</a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experiencia.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo05">
+                <form class="d-flex" role="search" class="searchBar">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en el sitio" aria-label="Search">
+                    <!-- <input class="btn btn-outline-success" type="image" src="media/search_button.png" height="50px" width="100"> -->
+                    <!-- <input type="image" src="media/search_button.png" height="40px" width="80"> -->
+                </form>
+            </div>
         </div>
-        <ul class="menuBurguer">
-            <li><a class="menuItem" href="../index.html">Inicio</a></li>
-            <li class="division">|</li>
-            <li><a class="menuItem" href="quienes_somos.html">Quiénes somos</a></li>
-            <li class="division">|</li>
-            <li><a class="menuItem" href="servicios.html">Servicios</a></li>
-            <li class="division">|</li>
-            <li><a class="menuItem" href="experiencia.html">Experiencia</a></li>
-            <li class="division">|</li>
-            <li><a class="menuItem" href="contacto.html">Contacto</a></li>
-        </ul>
     </nav>
     <aside>
         <!-- Barra de búsqueda -->
@@ -82,60 +111,110 @@
         <br>
     </aside>
     <article>
-        <a class="enfasisButtonBody" href="contacto.html">Quiero contratar<br>un servicio</a> 
-        <p>
-        Nuestro equipo esta altamente capacitado para resolver prblemas de ingeniería relacionados con
-        el desarrollo de software de simuladores de reactores nucleares, desde su arquitectura, bases de datos,
-        modelos físicos, hasta su interfaz humano máquina (HMI).
-        </p>
+        <div id="articleTop">
+            <a class="enfasisButtonBody" href="contacto.html">Quiero contratar<br>un servicio</a> 
+            <p>
+            Nuestro equipo esta altamente capacitado para resolver prblemas de ingeniería relacionados con
+            el desarrollo de software de simuladores de reactores nucleares, desde su arquitectura, bases de datos,
+            modelos físicos, hasta su interfaz humano máquina (HMI).
+            </p>
+        </div>
         <p>
         Ofrecemos una amplia gama de servicios para adecuarnos a la necesidad de cada cliente.
         </p>
         <!--quizas se pueden agregar algunos dibujitos aca para hacerlo mas dinámico en la parte de css-->
-        <ol>
-            <li class="servicio">
-                <div class="servicioTitle">Simuladores de alcance total "Fullscope"</div>
-                <p>El producto final esperado en general es un simulador de tipo Fullscope en el cual está emulado el sistema
-                de control del reactor. Se alimentan a este sistema de control todas las señales provenientes de la planta, que se 
-                obtienen a partir de modelos elaborados usando las herramientas Relap5 y Matlab-Simulink asi como herramientas de elaboración 
-                propia.</p>
-            </li>
-            <li class="servicio">
-                <div class="servicioTitle">Simuladores de verificación de ingeniería</div>
-                <p>En general se demanda este tipo de simulador en etapas previas de la ingeniería para verificar el diseño de reactor propuesto
-                en diferentes maniobras operativas. Si bien no es un simulador de alcance total, es decir que el sistema de control no está emulado,
-                posee un modelo ad-hoc del sistema de control con la representación de las principales señales para poder monitorear las principales 
-                variables de proceso.
-                </p>
-            </li>
-            <li class="servicio">
-                <div class="servicioTitle">Simuladores educacionales</div>
-                <p>Pueden ser de alcance total o no. La diferencia fundamental es que poseen una arquitectura que permite simular un mismo transitorio
-                en diferentes pantallas. Estan orientados al entrenamiento de operarios. En este tipo de simulador, un "instructor" puede preparar un 
-                transitorio para que los "alumnos" realicen las acciones necesarias en sus pantallas de HMI. El instructor puede, además, introducir diferentes
-                fallas del sistema de control o de la planta, para capacitar a los operarios en cuanto a cómo actuar ante ellas.
-                </p>
-            </li>
-            <li class="servicio">
-                <div class="servicioTitle">Evaluaciones de dinámica de planta y diseño de lazos de control</div>
-                <p>Como subproducto de los simuladores de verificación de la ingeniería, usando este tipo de simuladores nuestro equipo es capaz de 
-                analizar los transitorios principales de la planta, como pueden ser las maniobras de arranque y parada y la resolución de eventos iniciantes.
-                Este servicio es de vital importancia en las etapas de diseño del reactor, para poder conocer cómo actúan los componentes y equipos seleccionados en conjunto con 
-                toda la planta y detectar la necesidad de realizar cambios a la ingeniería de forma temprana. Además el equipo cuenta con amplia experiencia en el área de 
-                instrumentación y control y tiene la capacidad de diseñar y tunear lazos de control en caso de ser necesario.
-                </p>
-            </li>
-        <!-- No lo ofrecemos puntualmente pero por ahi sirve para la parte de formulario-->
-        <!--<li> 
-            <b>Software y herramientas para el desarrollo de simuladores</b>
-            <br>A través de años de experiencia en el área, nuestro equipo desarrollo un conjunto de herramientas para facilitar el proceso
-            de la elaboración de simuladores de reactores nucleares. Ofrecemos la posibilidad de acceder a las mismas.
-        </li>-->
-        </ol>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <img src="../media/educational_blurry.png" class="d-block w-100" alt="..."> -->
+                    <!-- <div class="carousel-caption d-none d-md-block"> -->
+                    <div class="servicioTitle">Simuladores de alcance total "Fullscope"</div>
+                    <p class="carouselCaption">El producto final esperado en general es un simulador de tipo Fullscope en el cual está emulado el sistema
+                    de control del reactor. Se alimentan a este sistema de control todas las señales provenientes de la planta, que se 
+                    obtienen a partir de modelos elaborados usando las herramientas Relap5 y Matlab-Simulink asi como herramientas de elaboración 
+                    propia.</p>
+                    <p class="carouselCaptionMobile">En este tipo de simulador está emulado el sistema
+                    de control del reactor en su totalidad, teniendo en cuenta todas las señales de entrada y salida del mismo.</p>
+                    <!-- <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="servicioTitle">Simuladores de verificación de ingeniería</div>
+                    <p class="carouselCaption">En general se demanda este tipo de simulador en etapas previas de la ingeniería para verificar el diseño de reactor propuesto
+                    en diferentes maniobras operativas. Si bien no es un simulador de alcance total, es decir que el sistema de control no está emulado,
+                    posee un modelo ad-hoc del sistema de control con la representación de las principales señales para poder monitorear las principales 
+                    variables de proceso.
+                    </p>
+                    <p class="carouselCaptionMobile">Poseen un modelo ad-hoc del sistema de control con la representación de las señales necesarias para poder monitorear las principales 
+                        variables de proceso y de esta forma verificar la ingeniería de la planta.
+                    </p>
+    
+                    <!-- <img src="../media/educational_blurry.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="servicioTitle">Simuladores educacionales</div>
+                    <p class="carouselCaption">Pueden ser de alcance total o no. La diferencia fundamental es que poseen una arquitectura que permite simular un mismo transitorio
+                    en diferentes pantallas. Estan orientados al entrenamiento de operarios. En este tipo de simulador, un "instructor" puede preparar un 
+                    transitorio para que los "alumnos" realicen las acciones necesarias en sus pantallas de HMI. El instructor puede, además, introducir diferentes
+                    fallas del sistema de control o de la planta, para capacitar a los operarios en cuanto a cómo actuar ante ellas.
+                    </p>
+                    <p class="carouselCaptionMobile">Poseen una arquitectura que permite simular un mismo transitorio
+                        en diferentes pantallas. Estan orientados al entrenamiento de operarios de plantas nucleares.
+                    </p>
+                    <!-- <img src="../media/educational_blurry.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="servicioTitle">Evaluaciones de dinámica de planta y lazos de control</div>
+                    <p class="carouselCaption">Como subproducto de los simuladores de verificación de la ingeniería, usando este tipo de simuladores nuestro equipo es capaz de 
+                    analizar los transitorios principales de la planta, como pueden ser las maniobras de arranque y parada y la resolución de eventos iniciantes.
+                    Este servicio es de vital importancia en las etapas de diseño del reactor, para poder conocer cómo actúan los componentes y equipos seleccionados en conjunto con 
+                    toda la planta y detectar la necesidad de realizar cambios a la ingeniería de forma temprana. Además el equipo cuenta con amplia experiencia en el área de 
+                    instrumentación y control y tiene la capacidad de diseñar y tunear lazos de control en caso de ser necesario.
+                    </p>
+                    <p class="carouselCaptionMobile">Usando este tipo de simuladores nuestro equipo es capaz de 
+                        analizar los transitorios principales de la planta, asi como tunear los reguladores de las principales variables de proceso.
+                        </p>
+                    <!-- <img src="../media/educational_blurry.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fourth slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div> -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </article>
     <footer id="pie">
             Copyright © 2022 Dinámica de planta & Simuladores | CAB - CNEA
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+    </script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 </body>
-
 </html>
