@@ -105,74 +105,118 @@
         </form>
     </aside>
     <article>
-        <h4>
-            Nos interesa estar en contacto con usted.
-        </h4>
-        <!-- Formularios -->
+        <div>
+            <h4>
+                Nos interesa estar en contacto con usted.
+            </h4>
+        </div>
+        <!--formulario bootstrap-->
         <form action="" method="GET" enctype="multipart/form-data">
-            <fieldset>
-                <legend class="fieldTitle">Información Personal:</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Nombre">
-                &nbsp
-                <label for="nombre">Apellido:</label>
-                <input type="text" placeholder="Apellido">
-                <br>
-                <!--Normalmente no se requeriría este campo pero lo pongo para practicar-->
-                <div class="sexoFormDesktop">
-                    <label for="sexo">Sexo:</label>
-                    <input id="hombre" name="sexo" type="radio" value="hombre">
-                    <label for="hombre">Hombre</label>
-                    <input id="mujer" name="sexo" type="radio" value="mujer">
-                    <label for="mujer">Mujer</label>
-                    <!-- sería una página del estado asi que esto es requisito-->
-                    <input id="otro" name="sexo" type="radio" value="otro">
-                    <label for="otro">Otro</label>
-                    <input id="nsnc" name="sexo" type="radio" value="prefiero no decirlo">
-                    <label for="nsnc">prefiero no decirlo</label>
-                    <br>
+            <fieldset class="row">
+                <legend class="fieldTitle col-sm-12 col-lg-12">Datos personales</legend>
+                <div class="mb-3 col-sm-12 col-lg-6">
+                    <label for="inputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Nombre">
                 </div>
-                <div class="sexoFormMobile">
-                    <label for="sexo">Sexo:</label>
-                    <br><input id="hombre" name="sexo" type="radio" value="hombre">
-                    <label for="hombre">Hombre</label>
-                    <br><input id="mujer" name="sexo" type="radio" value="mujer">
-                    <label for="mujer">Mujer</label>
-                    <!-- sería una página del estado asi que esto es requisito-->
-                    <br><input id="otro" name="sexo" type="radio" value="otro">
-                    <label for="otro">Otro</label>
-                    <br><input id="nsnc" name="sexo" type="radio" value="prefiero no decirlo">
-                    <label for="nsnc">prefiero no decirlo</label>
+                <div class="mb-3 col-sm-12 col-lg-6">
+                    <label for="inputSurname" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputSurname" placeholder="Apellido">
                 </div>
-                <label for="empresa">Empresa:</label>
-                <input type="text" placeholder="Empresa">
-                <br>
-                <label for="email">E-mail de contacto:</label>
-                <input type="email" placeholder="E-mail">
-                <br>
+                <legend class="col-form-label col-3 col-sm-3 col-lg-3 pt-0">Sexo</legend> 
+                <div class="radioDesktop col-sm-9 col-lg-9">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="hombre" value="option1" checked>
+                        <label class="form-check-label" for="hombre">
+                            Hombre
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="mujer" value="option2">
+                        <label class="form-check-label" for="mujer">
+                            Mujer
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="otro" value="option3">
+                        <label class="form-check-label" for="otro">
+                            Otro
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="nsnc" value="option3">
+                        <label class="form-check-label" for="nsnc">
+                            Prefiero no decirlo
+                        </label>
+                    </div>
+                </div>
+                <div class="radioMobile col-9 col-sm-9 col-lg-9">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="hombre" value="option1" checked>
+                        <label class="form-check-label" for="hombre">
+                            Hombre
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="mujer" value="option2">
+                        <label class="form-check-label" for="mujer">
+                            Mujer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="otro" value="option3">
+                        <label class="form-check-label" for="otro">
+                            Otro
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="nsnc" value="option3">
+                        <label class="form-check-label" for="nsnc">
+                            Prefiero no decirlo
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3 col-sm-12 col-lg-6">
+                    <label for="inputCompany" class="form-label">Empresa</label>
+                    <input type="text" class="form-control" id="inputCompany" placeholder="Empresa">
+                </div>
+                <div class="mb-3 col-sm-12 col-lg-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="email@host.com">
+                </div>
             </fieldset>
-            <fieldset>
-                <legend class="fieldTitle">Consulta</legend>
-                <label for="motivo">Motivo de la consulta:</label>
-                <select name="motivo" id="">
-                    <option value="contratar servicio">Quiero contratar un servicio</option>
-                    <option value="formar parte">Quiero formar parte del equipo</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <br>
-                <label for="mensaje">Mensaje</label>
-                <br>
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe aqui tu consulta"></textarea>
-                <!--Me gustaría aprender más adelante a poner un campo para subir un archivo como un CV en pdf-->
-                <br>
-                <input class="button" type="submit" value="Enviar">
-                <input class="button" type="reset" value="Resetear">
-                <!--<input type="button" value="Boton">-->
+            <fieldset class="row mb-3">
+                <div class="mb-3">
+                    <legend class="fieldTitle">Consulta</legend>
+                    <label for="motivo">Motivo de la consulta:</label>
+                    <select name="motivo" class="form-select" aria-label="Default select example">
+                        <optgroup>
+                            <option selected disabled>Elegir un motivo</option>
+                            <option value="contratar servicio">Quiero contratar un servicio</option>
+                            <option value="formar parte">Quiero formar parte del equipo</option>
+                            <option value="Otro">Otro</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <!-- <label for="mensaje">Mensaje</label> -->
+                <div class="mb-3">
+                    <label for="consulta" class="form-label">Mensaje</label>
+                    <textarea name="msj" class="form-control" id="consulta" rows="3"></textarea>
+                </div>
+                <!-- <div class="form-floating">
+                    <textarea name="msj" class="form-control" placeholder="Escribe aqui tu consulta" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Mensaje</label>
+                </div> -->
+                <div class="mb-3 d-grid gap-2 d-flex justify-content-center justify-content-sm-end">
+                    <input class="button btn btn-primary col-5 col-sm-3 col-lg-3" type="submit" value="Enviar">
+                    <input class="button btn btn-primary col-5 col-sm-3 col-lg-3" type="reset" value="Resetear">
+                </div>
             </fieldset>
         </form>
-        <h4>
-            ¡Gracias por contar con nosotros!
-        </h4>
+        <div>
+            <h4>
+                ¡Gracias por contar con nosotros!
+            </h4>
+        </div>        
     </article>
     <footer id="pie">
             Copyright © 2022 Dinámica de planta & Simuladores | CAB - CNEA
