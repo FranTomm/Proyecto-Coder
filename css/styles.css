@@ -720,7 +720,7 @@ optgroup{
     }
     /*keep this one last*/
     .cardProfile{
-        width: 750px;
+        width: 100%;
         background-color: var(--dark-teal-transparent-50)!important;
         margin: 5px 5px 5px 5px;
         border-radius: 30px;
@@ -857,5 +857,9 @@ optgroup{
     }
     .card-col{
         display: block;
+    }
+    /*media query de cards quienes somos*/
+    .cardProfile{
+        width: 700px;
     }
 }
