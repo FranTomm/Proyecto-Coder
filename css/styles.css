@@ -10,7 +10,7 @@
 :root{
     --dark-teal-gradient:linear-gradient(rgb(56, 131, 152),rgb(43, 103, 119),rgb(34, 90, 104));
     --dark-teal:rgb(43, 103, 119);
-    --dark-teal-transparent-50:rgb(43, 103, 119,50%);
+    --dark-teal-transparent-50:rgba(43, 103, 119,50%);
     --light-grey:rgb(217,217,217);
     --orange:rgb(237, 161, 15);
 }
@@ -81,9 +81,9 @@ nav{
 
 .navButton:hover,.navButtonDiv:hover{
     background-color: rgba(255, 255, 255, 0.03);
-    /*background-image: linear-gradient(rgb(255, 255, 255, 0.00),rgb(255, 255, 255, 0.1),rgb(255, 255, 255, 0.00));*/
+    /*background-image: linear-gradient(rgb(255, 255, 255, 0.00),rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.00));*/
     /*border-radius: 30px;*/
-    box-shadow:0px 0px 30px rgb(0,0,0,10%);
+    box-shadow:0px 0px 30px rgba(0,0,0,10%);
     /*border: 2px solid white;*/
     /*overflow: hidden;*/
 }
@@ -234,8 +234,8 @@ iframe{
 }
 
 fieldset{
-    /*background-color:  rgb(43, 103, 119, 50%);*/
-    background-image: linear-gradient(rgb(43, 103, 119, 50%) 50% ,rgb(43, 103, 119, 75%));
+    /*background-color:  rgba(43, 103, 119, 50%);*/
+    background-image: linear-gradient(rgba(43, 103, 119, 50%) 50% ,rgba(43, 103, 119, 75%));
     border-radius: 20px;
     letter-spacing: 3px;
     padding: 10px 10px 10px 10px;
@@ -254,21 +254,7 @@ fieldset{
 .servicio{
     padding: 10px 10px 10px 10px;
 }
-.servicioTitle{
-    background-image: url("../media/educational_blurry.png");
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-attachment: fixed;*/
-    padding: 100px 50px 100px 50px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Oswald';
-    letter-spacing: 5px;
-    text-shadow:2px 2px rgba(0,0,0,.3);
-    font-size: 30px;
-    color:white;
-}
+
 
 footer{
     padding: 40px 10px 40px 40px;
@@ -287,7 +273,7 @@ footer{
 }
 
 .profileData,.proyectData{
-    /* background-color: rgb(82, 171, 152,80%); */
+    /* background-color: rgba(82, 171, 152,80%); */
     background-color: var(--dark-teal-transparent-50);
     border-radius: 30px;
     padding: 20px 20px 20px 20px;
@@ -302,7 +288,7 @@ footer{
 }
 .proyectData{
     color: black;
-    background-color: rgb(217,217,217,75%);
+    background-color: rgba(217,217,217,75%);
 }
 
 
@@ -378,7 +364,7 @@ form{
 
 /*carousel style*/
 .carouselCaption,.carouselCaptionMobile{
-    background-color: rgb(43, 103, 119, 80%);
+    background-color: rgba(43, 103, 119, 80%);
     color: white;
     font-size: medium;
     font-weight: 200;
@@ -386,6 +372,39 @@ form{
     text-align: justify;
     margin: 0 0 0 0;
     padding: 10px 10px 0px 10px;
+}
+
+.servicioTitle{
+    /*background-image: url("../media/educational_blurry.png");*/
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    padding: 100px 50px 100px 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald';
+    letter-spacing: 5px;
+    text-shadow:2px 2px rgba(0,0,0,.3);
+    font-size: 30px;
+    color:white;
+}
+
+#carrouselImg1{
+    background-image: url("../media/Carrusel1.jpg");
+}
+
+#carrouselImg2{
+    background-image: url("../media/Carrusel4.jpg");
+    filter: blur(100);
+}
+
+#carrouselImg3{
+    background-image: url("../media/educational_blurry.png");
+}
+
+#carrouselImg4{
+    background-image: url("../media/Carrusel6.jpg");
 }
 
 #carouselExampleCaptions{
@@ -405,7 +424,7 @@ form{
 /* accordion en página quiénes somos */
 #accordionQuienesSomos{
     margin: 0px 10px 10px 10px;
-    background-color: rgb(0,0,0,0%);
+    background-color: rgba(0,0,0,0%);
 }
 
 .accordion-body{
@@ -420,7 +439,7 @@ form{
 
 .accordion-button{
     /*background-image: var(--dark-teal-gradient);*/
-    background-image: linear-gradient(rgb(56, 131, 152,0.8),rgb(43, 103, 119,0.8),rgb(34, 90, 104,0.8));
+    background-image: linear-gradient(rgba(56, 131, 152,0.8),rgba(43, 103, 119,0.8),rgba(34, 90, 104,0.8));
     color: white;
     font-family: 'Inter';
     font-size: x-large;
@@ -483,7 +502,7 @@ optgroup{
     letter-spacing: 2px;
 }
 .card-text{
-    background-color: rgb(0,0,0,0%);
+    background-color: rgba(0,0,0,0%);
     font-family: 'Inter';
     font-weight: 400;
 }
@@ -536,7 +555,7 @@ optgroup{
         background-attachment: fixed;
     }
     p{
-        background-color: rgb(200, 216, 228,80%);
+        background-color: rgba(200, 216, 228,80%);
         line-height: 26px;
         text-align: center;
     }
@@ -577,7 +596,7 @@ optgroup{
         padding: 0 3px 0 3px;
     }
     .bodyTitle{
-        background-color: rgb(43, 103, 119,60%);
+        background-color: rgba(43, 103, 119,60%);
     }
     textarea{
         width: 320px;
@@ -741,7 +760,7 @@ optgroup{
         flex-direction: row;
         align-items: center;
         grid-area: searchbar;
-        background-color: rgb(217, 217, 217,50%)!important;
+        background-color: rgba(217, 217, 217,50%)!important;
     }
     .searchBar{       
         padding: 2px 2px 2px 2px;  
@@ -766,7 +785,7 @@ optgroup{
         background-image: linear-gradient(rgb(200,216,228),rgb(162, 182, 198));
     }
     p{
-        background-color: rgb(200, 216, 228,0%);
+        background-color: rgba(200, 216, 228,0%);
         font-size: medium;
         line-height: normal;
         text-align: justify;
@@ -803,7 +822,7 @@ optgroup{
         padding: 0 10px 0 10px;
     }
     .bodyTitle{
-        background-color: rgb(43, 103, 119,50%);
+        background-color: rgba(43, 103, 119,50%);
     }
     textarea{
         width: 580px;
