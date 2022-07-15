@@ -1,0 +1,17 @@
+/*color palette*/
+$dark-teal:rgb(43, 103, 119);
+$dark-teal-gradient:linear-gradient(rgb(56, 131, 152),$dark-teal,rgb(34, 90, 104));
+$dark-teal-transparent-gradient:linear-gradient(rgba(43, 103, 119, 50%) 50% ,rgba(43, 103, 119, 75%));
+$dark-teal-accordion-gradient:linear-gradient(rgba(56, 131, 152,0.8),rgba(43, 103, 119,0.8),rgba(34, 90, 104,0.8));
+$light-grey:rgb(217,217,217);
+$dark-grey-gradient:linear-gradient(rgb(55, 75, 80),rgb(35, 47, 50));
+$shadow-black-transparent:rgba(0,0,0,0.1);
+$orange:rgb(237, 161, 15);
+$orange-gradient:linear-gradient(rgb(242, 188, 87) 10%,$orange,rgb(182, 119, 0)90%);
+$light-blue-gradient:linear-gradient(rgb(200,216,228),rgb(162, 182, 198));
+$aquamarina:rgb(82,171,152);
+$aquamarina-gradient:linear-gradient(rgb(82, 171, 152)50%,rgb(66, 151, 133));
+
+/*font family*/
+$font-general:'Inter';
+$font-enfasis:'Oswald';

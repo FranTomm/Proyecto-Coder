@@ -1,0 +1,89 @@
+nav{
+    border-style: none;
+    grid-area: nav;
+}
+nav,.button{
+    background-image: $dark-teal-gradient;
+}
+.navButton{
+    height: 98px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in;
+    position: relative;
+    padding-left: 1px;
+    border: none;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.03);
+        box-shadow:0px 0px 30px rgba(0,0,0,10%);
+    }
+    
+    .menuItem{/*elemento anidado*/
+        padding: 0px 100px 0px 100px;
+        color: white;
+        font-family: $font-general;
+        font-weight: 200;
+        text-decoration: none;
+        margin: 0;
+    /*    text-overflow: clip;*/
+        &:hover{
+            color: white;
+            font-weight: 400;
+        }
+    }
+}
+
+.navButtonDiv{
+    @extend .navButton;
+    &:after{/*pseudoelement*/
+        content: "";
+        border-right: white 2px solid;
+        position: absolute;
+        top: 30px;
+        bottom: 30px;
+        left: 0px;
+        opacity: 70%;
+    }
+    &:hover:after{
+        opacity:100%;        
+    }
+}
+
+#mobileNav{
+    grid-area: mobileNav;
+}
+
+#desktopNav{
+    grid-area: desktopNav;
+}
+
+.mainMenuMobile{
+    color:white;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: $font-general;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+    width: 100%;
+}
+.nav-item,.navbar-toggler{
+    font-size: x-large;
+    font-family:$font-general ;
+    color:white;
+    font-weight: 200;
+    padding: 10px 18px 10px 18px ;
+    border: none;
+}
+.navbar-toggler{
+    padding: 28px 0px 28px 0px ;
+    &:active{
+        border: none;
+    }
+}

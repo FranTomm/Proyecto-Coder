@@ -1,0 +1,38 @@
+.carouselCaption{
+    @include background_color($dark-teal,0.8);
+    color: white;
+    font-size: medium;
+    font-weight: 200;
+    line-height: normal;
+    text-align: justify;
+    margin: 0 0 0 0;
+    padding: 10px 10px 0px 10px;
+}
+.CarouselCaptionMobile{
+    @extend .carouselCaption;
+}
+
+.servicioTitle{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 50px 100px 50px;
+    display: flex;
+    justify-content: center;
+    font-family: $font-enfasis;
+    letter-spacing: 5px;
+    text-shadow:2px 2px rgba(0,0,0,.3);
+    font-size: x-large;
+    color:white;
+}
+
+$imgs-carrousel:url("../media/Carrusel1.jpg"),url("../media/Carrusel4.jpg"),url("../media/educational_blurry.png"),url("../media/Carrusel6.jpg");
+
+@for $i from 1 through 4{
+    #carrouselImg#{$i}{
+        background-image: nth($imgs-carrousel,$i);
+    }
+} 
+#carouselExampleCaptions{
+    margin: 0 10px 10px 10px;
+}

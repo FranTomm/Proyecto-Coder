@@ -1,0 +1,15 @@
+@mixin scale($width, $height) {
+    height: $height;
+    width:$width
+}
+
+@mixin background_color($color,$transparency){
+    background-color: rgba($color,$transparency);
+}
+
+@mixin background_image_default($url){
+    background-image: url($url);    
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment: fixed;
+}
