@@ -44,6 +44,12 @@ header {
   .logoMobile {
     display: block;
   }
+  #logo_DDPyS {
+    height: 90px;
+    width: 70px;
+    margin: 2px 2px 2px 2px;
+    padding: 0 3px 0 3px;
+  }
 }
 @media screen and (min-width: 992px) {
   .logoMobile {
@@ -150,6 +156,46 @@ nav, .button {
   border: none;
 }
 
+@media screen and (min-width: 320px) {
+  #desktopNav {
+    display: none;
+  }
+  #mobileNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menuItem {
+    padding: 0px 15px 0px 15px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #mobileNav {
+    display: none;
+  }
+  #desktopNav {
+    display: block;
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    align-content: stretch;
+  }
+  .menuItem {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menuItem {
+    padding: 30px 30px 30px 30px;
+    font-size: 20px;
+  }
+}
 article {
   grid-area: article;
 }
@@ -170,12 +216,31 @@ article h3 {
 }
 
 @media screen and (min-width: 320px) {
+  article {
+    background-color: rgb(82, 171, 152);
+    background-image: url("../media/background_image_lores.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   article h3 {
     background-color: rgba(43, 103, 119, 0.6);
     font-size: large;
   }
+  .videoDesktop {
+    display: none;
+  }
+  .videoMobile {
+    display: block;
+  }
+  .bodyTitle {
+    background-color: rgba(43, 103, 119, 0.6);
+  }
 }
 @media screen and (min-width: 1200px) {
+  article {
+    background-image: linear-gradient(rgb(200, 216, 228), rgb(162, 182, 198)) !important;
+  }
   article h3 {
     background-color: rgba(43, 103, 119, 0.5);
     font-size: medium;
@@ -300,6 +365,16 @@ footer {
   align-items: center;
 }
 
+@media screen and (min-width: 320px) {
+  footer {
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    font-size: small;
+  }
+}
 /* estilos específicos de la página quienes somos*/
 .profilePicture, .reactorLogo, .reactorLogoVectorial {
   border-radius: 30px;
@@ -390,6 +465,33 @@ aside {
   margin: 0 10px 10px 10px;
 }
 
+@media screen and (min-width: 320px) {
+  .carouselCaption, .CarouselCaptionMobile {
+    display: none;
+  }
+  .carouselCaptionMobile {
+    display: block;
+    height: 230px;
+    line-height: 30px;
+    margin: 0 0 50px 0;
+    text-align: center;
+    background-color: rgba(43, 103, 119, 0.8);
+  }
+  .servicioTitle {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carouselCaption, .CarouselCaptionMobile {
+    display: block;
+    height: 180px;
+    line-height: normal;
+    margin-bottom: 0px;
+  }
+  .carouselCaptionMobile {
+    display: none;
+  }
+}
 /* accordion en página quiénes somos */
 #accordionQuienesSomos {
   margin: 0px 10px 10px 10px;
@@ -586,6 +688,15 @@ optgroup {
   .radioMobile {
     display: block;
   }
+  .button {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
 }
 @media screen and (min-width: 992px) { /*quiero conservar la barra de navegación que ya tenia hecha para desktop*/
   body {
@@ -651,6 +762,15 @@ optgroup {
   fieldset {
     width: 100%;
     margin: 10px 10px 10px 10px;
+  }
+  .button {
+    font-size: medium;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
   }
   /* media query del formulario*/
   .radioDesktop {
@@ -753,6 +873,15 @@ optgroup {
   }
 }
 @media screen and (min-width: 992px) {
+  .proyectCard, .card, .cardProfile {
+    flex-direction: row;
+  }
+  .profileData {
+    letter-spacing: 2px;
+    width: 70%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+  }
   /*media query de cards*/
   .card-body {
     height: 200px;
@@ -797,27 +926,11 @@ optgroup {
     grid-template-rows: 130px auto auto 110px;
     grid-template-areas: "header" "mobileNav" "article" "footer";
   }
-  .searchBar, aside, #desktopNav, .videoDesktop {
+  .searchBar, aside {
     display: none;
   }
-  #mobileNav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .enfasisButtonBody, .videoMobile {
+  .enfasisButtonBody {
     display: block;
-  }
-  .menuItem {
-    padding: 0px 15px 0px 15px;
-    font-size: 24px;
-  }
-  article {
-    background-color: rgb(82, 171, 152);
-    background-image: url("../media/background_image_lores.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
   p {
     background-color: rgba(200, 216, 228, 0.8);
@@ -830,100 +943,12 @@ optgroup {
   h2 {
     font-size: 14px;
   }
-  #logo_DDPyS {
-    height: 90px;
-    width: 70px;
-    margin: 2px 2px 2px 2px;
-    padding: 0 3px 0 3px;
-  }
-  .bodyTitle {
-    background-color: rgba(43, 103, 119, 0.6);
-  }
-  .button {
-    font-size: 20px;
-    font-weight: 200;
-  }
-  h4 {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
-  /* media query carrousel*/
-  .carouselCaption, .CarouselCaptionMobile {
-    display: none;
-  }
-  .carouselCaptionMobile {
-    display: block;
-    height: 230px;
-    line-height: 30px;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  .servicioTitle {
-    height: 300px;
-  }
-  /*media query del formulario*/
-  .radioDesktop {
-    display: none;
-  }
-  .radioMobile {
-    display: block;
-  }
 }
 @media screen and (min-width: 992px) { /*quiero conservar la barra de navegación que ya tenia hecha para desktop*/
   body {
     grid-template-columns: auto;
     grid-template-rows: 130px 100px auto 110px;
     grid-template-areas: "header" "desktopNav" "article" "footer";
-  }
-  #mobileNav {
-    display: none;
-  }
-  #desktopNav {
-    display: block;
-  }
-  .navMenu {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: stretch;
-    align-content: stretch;
-  }
-  .menuItem {
-    font-size: 22px;
-  }
-  /* media query carrousel*/
-  .carouselCaption, .CarouselCaptionMobile {
-    display: block;
-    height: 180px;
-    line-height: normal;
-    margin-bottom: 0px;
-  }
-  .carouselCaptionMobile {
-    display: none;
-  }
-  .proyectCard, .card, .cardProfile {
-    flex-direction: row;
-  }
-  .profileData {
-    letter-spacing: 2px;
-    width: 70%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-  }
-  /*media query del formulario*/
-  .radioDesktop {
-    display: block;
-  }
-  .radioMobile {
-    display: none;
-  }
-  h4 {
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 3px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -940,7 +965,8 @@ optgroup {
     flex-direction: row;
     align-items: center;
     grid-area: searchbar;
-    background-color: rgba(217, 217, 217, 0.5) !important;
+    background-color: rgba(217, 217, 217, 0.5);
+    /*background-color: rgba(217, 217, 217,50%)!important;*/
   }
   .searchBar {
     padding: 2px 2px 2px 2px;
@@ -951,18 +977,11 @@ optgroup {
   .searchBarButton {
     margin: 50px 50px 50px 50px;
   }
-  .menuItem {
-    padding: repeat(4, 30px);
-    font-size: 20px;
-  }
-  .enfasisButtonBody, .sexoFormMobile, .videoMobile {
+  .enfasisButtonBody, .videoMobile {
     display: none;
   }
   .enfasisButton, .videoDesktop {
     display: block;
-  }
-  article {
-    background-image: linear-gradient(rgb(200, 216, 228), rgb(162, 182, 198));
   }
   p {
     background-color: rgba(200, 216, 228, 0);
@@ -970,44 +989,10 @@ optgroup {
     line-height: normal;
     text-align: justify;
   }
-  footer {
-    font-size: small;
-  }
   h1 {
     font-size: 32px;
   }
   h2 {
     font-size: 20px;
-  }
-  textarea {
-    width: 580px;
-    height: 200px;
-  }
-  fieldset {
-    width: 100%;
-    margin: 10px 10px 10px 10px;
-  }
-  .button {
-    font-size: medium;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 3px;
-  }
-  .sexoFormDesktop {
-    display: inline;
-  }
-  /* media query carrousel*/
-  .carouselCaption, .CarouselCaptionMobile {
-    height: 180px;
-  }
-  /* media query del formulario*/
-  .radioDesktop {
-    display: block;
-  }
-  .radioMobile {
-    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

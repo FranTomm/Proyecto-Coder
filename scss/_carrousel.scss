@@ -36,3 +36,32 @@ $imgs-carrousel:url("../media/Carrusel1.jpg"),url("../media/Carrusel4.jpg"),url(
 #carouselExampleCaptions{
     margin: 0 10px 10px 10px;
 }
+
+@media screen and (min-width:320px){
+    .carouselCaption{
+        display:none;
+    }
+    .carouselCaptionMobile{
+        display: block;
+        height: 230px;
+        line-height: 30px;
+        margin:0 0 50px 0;
+        text-align: center;
+        @include background_color($dark-teal,0.8);
+    }
+    .servicioTitle{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .carouselCaption{
+        display: block;
+        height: 180px;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+    .carouselCaptionMobile{
+       display: none;
+    }
+}

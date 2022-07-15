@@ -8,7 +8,8 @@ $dark-grey-gradient:linear-gradient(rgb(55, 75, 80),rgb(35, 47, 50));
 $shadow-black-transparent:rgba(0,0,0,0.1);
 $orange:rgb(237, 161, 15);
 $orange-gradient:linear-gradient(rgb(242, 188, 87) 10%,$orange,rgb(182, 119, 0)90%);
-$light-blue-gradient:linear-gradient(rgb(200,216,228),rgb(162, 182, 198));
+$light-blue:rgb(200, 216, 228);
+$light-blue-gradient:linear-gradient(($light-blue),rgb(162, 182, 198));
 $aquamarina:rgb(82,171,152);
 $aquamarina-gradient:linear-gradient(rgb(82, 171, 152)50%,rgb(66, 151, 133));
 

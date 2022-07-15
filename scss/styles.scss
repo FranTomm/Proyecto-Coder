@@ -171,30 +171,14 @@ aside{
         grid-template-rows: 130px auto auto 110px;
         grid-template-areas: "header" "mobileNav" "article" "footer";
     }
-    .searchBar,aside,#desktopNav,.videoDesktop{
+    .searchBar,aside{
         display: none;
     }
-    #mobileNav{
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-    }
-    .enfasisButtonBody,.videoMobile{
+    .enfasisButtonBody{
         display: block;
     }
-    .menuItem{
-        padding: 0px 15px 0px 15px;
-        font-size: 24px;
-    }
-    article{
-        background-color: $aquamarina;
-        background-image: url("../media/background_image_lores.jpg");    
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
     p{
-        background-color: rgba(200, 216, 228,80%);
+        @include background_color($light-blue,0.8);
         line-height: 26px;
         text-align: center;
     }
@@ -204,45 +188,6 @@ aside{
     h2{
         font-size: 14px;
     }
-    #logo_DDPyS{
-        height: 90px;
-        width: 70px;
-        margin: 2px 2px 2px 2px;
-        padding: 0 3px 0 3px;
-    }
-    .bodyTitle{
-        background-color: rgba(43, 103, 119,60%);
-    }
-    .button{
-        font-size: 20px;
-        font-weight: 200;
-    }
-    h4{
-        font-size: 20px;
-        font-weight: 500;
-        letter-spacing: 2px;
-    }
-    /* media query carrousel*/
-    .carouselCaption{
-        display:none;
-    }
-    .carouselCaptionMobile{
-        display: block;
-        height: 230px;
-        line-height: 30px;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    .servicioTitle{
-        height: 300px;
-    }
-    /*media query del formulario*/
-    .radioDesktop{
-        display: none;
-    }
-    .radioMobile{
-        display: block;
-    }
 }
 
 @media screen and (min-width: 992px){/*quiero conservar la barra de navegación que ya tenia hecha para desktop*/
@@ -250,55 +195,6 @@ aside{
         grid-template-columns: auto;
         grid-template-rows: 130px 100px auto 110px;
         grid-template-areas: "header" "desktopNav" "article" "footer";
-    }
-    #mobileNav{
-        display: none;
-    }
-    #desktopNav{
-        display: block;
-    }
-    .navMenu{
-        display: flex;
-        flex-direction: row;
-        border: 1px solid black;
-        align-items:center;
-        justify-content: space-evenly;
-        justify-items: stretch;
-        align-content: stretch;
-    }
-    .menuItem{
-        font-size: 22px;
-    }
-    /* media query carrousel*/
-    .carouselCaption{
-        display: block;
-        height: 180px;
-        line-height: normal;
-        margin-bottom: 0px;
-    }
-    .carouselCaptionMobile{
-       display: none;
-    }
-    .proyectCard,.card,.cardProfile{
-        flex-direction: row;
-    }
-    .profileData{
-        letter-spacing: 2px;
-        width: 70%;
-        height: auto;
-        margin: 10px 10px 10px 10px;
-    }
-    /*media query del formulario*/
-    .radioDesktop{
-        display: block;
-    }
-    .radioMobile{
-        display: none;
-    }
-    h4{
-        font-size: 20px;
-        font-weight: 400;
-        letter-spacing: 3px;
     }
 }
 
@@ -316,7 +212,8 @@ aside{
         flex-direction: row;
         align-items: center;
         grid-area: searchbar;
-        background-color: rgba(217, 217, 217,50%)!important;
+        @include background_color($light-grey,0.5);
+        /*background-color: rgba(217, 217, 217,50%)!important;*/
     }
     .searchBar{       
         padding: 2px 2px 2px 2px;  
@@ -327,18 +224,11 @@ aside{
     .searchBarButton{
         margin: 50px 50px 50px 50px;
     }
-    .menuItem{
-        padding: repeat(4,30px);
-        font-size: 20px;
-    }
-    .enfasisButtonBody,.sexoFormMobile,.videoMobile{
+    .enfasisButtonBody,.videoMobile{
         display: none;
     }
     .enfasisButton,.videoDesktop{
         display: block;
-    }
-    article{
-        background-image: linear-gradient(rgb(200,216,228),rgb(162, 182, 198));
     }
     p{
         background-color: rgba(200, 216, 228,0%);
@@ -346,45 +236,10 @@ aside{
         line-height: normal;
         text-align: justify;
     }
-    footer{
-        font-size: small;
-    }
     h1{
         font-size: 32px;
     }
     h2{
         font-size: 20px;
-    }
-
-    textarea{
-        width: 580px;
-        height: 200px;
-    }
-    fieldset{
-        width:100%;
-        margin: 10px 10px 10px 10px;
-    }
-    .button{
-        font-size: medium;
-        font-weight: 400;
-    }
-    h4{
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 3px;
-    }
-    .sexoFormDesktop{
-        display: inline;
-    }
-    /* media query carrousel*/
-    .carouselCaption{
-        height: 180px;
-    }
-    /* media query del formulario*/
-    .radioDesktop{
-        display: block;
-    }
-    .radioMobile{
-        display: none;
     }
 }

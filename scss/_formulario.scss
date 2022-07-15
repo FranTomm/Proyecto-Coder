@@ -162,6 +162,15 @@ optgroup{
     .radioMobile{
         display: block;
     }
+    .button{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
 }
 
 @media screen and (min-width: 992px){/*quiero conservar la barra de navegación que ya tenia hecha para desktop*/
@@ -228,6 +237,15 @@ optgroup{
     fieldset{
         width:100%;
         margin: 10px 10px 10px 10px;
+    }
+    .button{
+        font-size: medium;
+        font-weight: 400;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 3px;
     }
     /* media query del formulario*/
     .radioDesktop{

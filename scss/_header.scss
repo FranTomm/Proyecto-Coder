@@ -27,6 +27,11 @@ header{
     .logoMobile{
         display: block;
     }
+    #logo_DDPyS{
+        @include scale(70px,90px);
+        margin: 2px 2px 2px 2px;
+        padding: 0 3px 0 3px;
+    }
 }
 
 @media screen and (min-width: 992px){

@@ -7,3 +7,15 @@ footer{
     flex-direction: row;
     align-items: center;
 }
+
+@media screen and (min-width:320px){
+    footer{
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width:1200px){
+    footer{
+        font-size: small;
+    }
+}
