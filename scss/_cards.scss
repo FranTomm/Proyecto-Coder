@@ -1,3 +1,28 @@
+/* estilos de las cards de la página quienes somos*/
+.profilePicture,.reactorLogo,.reactorLogoVectorial{
+    border-radius: 30px;
+    border-image-repeat:repeat ;
+}
+
+.profileData,.proyectData{
+    /*background-color: rgba(82, 171, 152,80%);*/
+    @include background_color($dark-teal,0.5);
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    font-family: $font-general;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.proyectData{
+    color: black;
+    @include background_color($light-grey,0.75);
+}
+
 /* estilos de las card en página experiencia*/
 .card{
     background-image: $aquamarina-gradient; 
