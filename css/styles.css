@@ -406,8 +406,16 @@ aside {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
   font-size: x-large;
   color: white;
+  /*filter: grayscale(50%);*/
+  filter: opacity(95%);
+  transition: filter 1s ease-in-out;
+}
+.servicioTitle:hover {
+  /* filter:grayscale(0);*/
+  filter: opacity(100%);
 }
 
+/* creación del carrusel usando un mapa como pide la consigna del desafío*/
 #carrouselImg1 {
   background-image: url("../media/Carrusel1.jpg");
 }

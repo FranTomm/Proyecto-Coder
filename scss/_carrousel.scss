@@ -24,15 +24,24 @@
     text-shadow:2px 2px rgba(0,0,0,.3);
     font-size: x-large;
     color:white;
+    /*filter: grayscale(50%);*/
+    filter: opacity(95%);
+    transition: filter 1s ease-in-out;
+    &:hover{
+       /* filter:grayscale(0);*/
+        filter: opacity(100%);
+    }
 }
 
-$imgs-carrousel:url("../media/Carrusel1.jpg"),url("../media/Carrusel4.jpg"),url("../media/educational_blurry.png"),url("../media/Carrusel6.jpg");
+/* creación del carrusel usando un mapa como pide la consigna del desafío*/
+$imgs-carrousel:(img1:url("../media/Carrusel1.jpg"),img2:url("../media/Carrusel4.jpg"),img3:url("../media/educational_blurry.png"),img4:url("../media/Carrusel6.jpg"));
 
 @for $i from 1 through 4{
     #carrouselImg#{$i}{
-        background-image: nth($imgs-carrousel,$i);
+        background-image: map-get($imgs-carrousel,img#{$i});
     }
 } 
+
 #carouselExampleCaptions{
     margin: 0 10px 10px 10px;
 }
