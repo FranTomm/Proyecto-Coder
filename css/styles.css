@@ -407,6 +407,7 @@ aside {
   font-size: x-large;
   color: white;
   /*filter: grayscale(50%);*/
+  filter: brightness(70%);
   filter: opacity(95%);
   transition: filter 1s ease-in-out;
 }
@@ -416,8 +417,10 @@ aside {
 }
 
 /* creación del carrusel usando un mapa como pide la consigna del desafío*/
+/*$imgs-carrousel:(img1:url("../media/Carrusel11.jpg"),img2:url("../media/Carrusel14.jpg"),img3:url("../media/Carrusel13.png"),img4:url("../media/Carrusel15.jpg"));
+*/
 #carrouselImg1 {
-  background-image: url("../media/Carrusel1.jpg");
+  background-image: url("../media/Carrusel21.jpg");
 }
 
 #carrouselImg2 {

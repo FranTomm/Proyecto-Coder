@@ -25,6 +25,7 @@
     font-size: x-large;
     color:white;
     /*filter: grayscale(50%);*/
+    filter: brightness(70%);
     filter: opacity(95%);
     transition: filter 1s ease-in-out;
     &:hover{
@@ -34,8 +35,10 @@
 }
 
 /* creación del carrusel usando un mapa como pide la consigna del desafío*/
-$imgs-carrousel:(img1:url("../media/Carrusel1.jpg"),img2:url("../media/Carrusel4.jpg"),img3:url("../media/educational_blurry.png"),img4:url("../media/Carrusel6.jpg"));
+$imgs-carrousel:(img1:url("../media/Carrusel21.jpg"),img2:url("../media/Carrusel4.jpg"),img3:url("../media/educational_blurry.png"),img4:url("../media/Carrusel6.jpg"));
 
+/*$imgs-carrousel:(img1:url("../media/Carrusel11.jpg"),img2:url("../media/Carrusel14.jpg"),img3:url("../media/Carrusel13.png"),img4:url("../media/Carrusel15.jpg"));
+*/
 @for $i from 1 through 4{
     #carrouselImg#{$i}{
         background-image: map-get($imgs-carrousel,img#{$i});
