@@ -94,6 +94,10 @@
         /*media query de cards*/
     .card-body{
         @include scale(auto,auto);
+        h4{
+            text-align: center;
+            margin-left: 0px;
+        }
     }
     .card-img-top{
         margin: 5px 5px 0px 5px;
@@ -127,6 +131,10 @@
     /*media query de cards*/
     .card-body{
         @include scale(auto,200px);
+        h4{
+            text-align: center;
+            margin-left: 0px;
+        }
     }
     .card-img-top{
         @include scale(200px,200px);
@@ -158,5 +166,11 @@
     .proyectData{
         margin: 20px 20px 20px 10px;
         width: 100%;
+    }
+    .card-body{
+        h4{
+            text-align: left;
+            margin-left: 15px;
+        }
     }
 }

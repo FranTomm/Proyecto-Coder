@@ -372,7 +372,7 @@ aside {
   grid-area: aside;
 }
 
-.carouselCaption, .CarouselCaptionMobile {
+.carouselCaption, .carouselCaptionMobile {
   background-color: rgba(43, 103, 119, 0.8);
   color: white;
   font-size: medium;
@@ -432,7 +432,7 @@ aside {
 }
 
 @media screen and (min-width: 320px) {
-  .carouselCaption, .CarouselCaptionMobile {
+  .carouselCaption, .carouselCaptionMobile {
     display: none;
   }
   .carouselCaptionMobile {
@@ -448,7 +448,7 @@ aside {
   }
 }
 @media screen and (min-width: 992px) {
-  .carouselCaption, .CarouselCaptionMobile {
+  .carouselCaption, .carouselCaptionMobile {
     display: block;
     height: 180px;
     line-height: normal;
@@ -654,7 +654,7 @@ optgroup {
     letter-spacing: 2px;
   }
   /* media query carrousel*/
-  .carouselCaption, .CarouselCaptionMobile {
+  .carouselCaption, .carouselCaptionMobile {
     display: none;
   }
   .carouselCaptionMobile {
@@ -710,7 +710,7 @@ optgroup {
     font-size: 22px;
   }
   /* media query carrousel*/
-  .carouselCaption, .CarouselCaptionMobile {
+  .carouselCaption, .carouselCaptionMobile {
     display: block;
     height: 180px;
     line-height: normal;
@@ -876,6 +876,10 @@ optgroup {
     height: auto;
     width: auto;
   }
+  .card-body h4 {
+    text-align: center;
+    margin-left: 0px;
+  }
   .card-img-top {
     margin: 5px 5px 0px 5px;
     height: 310px;
@@ -910,6 +914,10 @@ optgroup {
     height: 200px;
     width: auto;
   }
+  .card-body h4 {
+    text-align: center;
+    margin-left: 0px;
+  }
   .card-img-top {
     height: 200px;
     width: 200px;
@@ -941,6 +949,10 @@ optgroup {
   .proyectData {
     margin: 20px 20px 20px 10px;
     width: 100%;
+  }
+  .card-body h4 {
+    text-align: left;
+    margin-left: 15px;
   }
 }
 @media screen and (min-width: 320px) {
