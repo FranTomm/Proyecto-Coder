@@ -19,11 +19,7 @@
     padding: 100px 50px 100px 50px;
     display: flex;
     justify-content: center;
-    font-family: $font-enfasis;
-    letter-spacing: 5px;
-    text-shadow:2px 2px rgba(0,0,0,.3);
-    font-size: x-large;
-    color:white;
+    align-items: center;
     /*filter: grayscale(50%);*/
     filter: brightness(70%);
     filter: opacity(95%);
@@ -31,6 +27,13 @@
     &:hover{
        /* filter:grayscale(0);*/
         filter: opacity(100%);
+    }
+    h3{
+        font-family: $font-enfasis;
+        color:white;
+        letter-spacing: 5px;
+        text-shadow:2px 2px rgba(0,0,0,.3);
+        font-size: x-large;
     }
 }
 

@@ -17,6 +17,13 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    h4{
+        font-family: $font-enfasis;
+        font-size: large;
+        color: white;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
 }
 .proyectData{
     color: black;
@@ -32,9 +39,12 @@
     @include background_color(white,0.4);
     margin: 5px;
     border-radius: 5px;
-}
-.card-title{
-    letter-spacing: 2px;
+    h4{
+        font-family: $font-enfasis;
+        font-size: large;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
 }
 .card-text{
     @include background_color(black,0);

@@ -86,17 +86,6 @@ iframe{
 
 @import "footer";
 
-h5{
-    font-family: $font-enfasis;
-    font-size: large;
-    letter-spacing: 10px;
-    font-weight: bold;
-}
-h6{
-    @extend h5;
-    letter-spacing: 5px;
-}
-
 body{
     display: grid;
 }

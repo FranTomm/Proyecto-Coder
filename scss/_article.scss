@@ -1,6 +1,6 @@
 article{
     grid-area: article;
-    h3{
+    .subtitle{
         color: white;
         font-weight: bold;
         padding: 10px 10px 10px 10px;
@@ -24,7 +24,7 @@ article{
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        h3{
+        .subtitle{
             @include background-color($dark-teal,0.6);
             font-size: large;
         }
@@ -44,7 +44,7 @@ article{
 
 @media screen and (min-width: 1200px){
     article {
-        h3{
+        .subtitle{
             @include background-color($dark-teal,0.5);
             font-size: medium;
         }
