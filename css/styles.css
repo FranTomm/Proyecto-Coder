@@ -853,12 +853,14 @@ optgroup {
     align-items: stretch;
   }
   .profilePicture {
+    height: 220px;
+    width: 220px;
     margin: 10px 10px 0px 10px;
   }
   .profileData {
     height: auto;
     width: 100%;
-    margin: 4px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
     text-align: center;
     font-size: small;
   }
@@ -944,6 +946,11 @@ optgroup {
     width: 700px;
     margin: 5px 5px 5px 5px;
   }
+  .profilePicture {
+    height: 200px;
+    width: 200px;
+    margin: 20px 10px 20px 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .proyectData {
@@ -953,7 +960,9 @@ optgroup {
     height: 200px;
     width: 200px;
   }
-  .profilePicture, .reactorLogo, .reactorLogoVectorial {
+  .reactorLogo, .reactorLogoVectorial {
+    height: 200px;
+    width: 200px;
     margin: 20px 10px 20px 20px;
   }
   .proyectCard {

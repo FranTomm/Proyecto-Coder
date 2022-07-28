@@ -76,11 +76,12 @@
         align-items: stretch;
     }
     .profilePicture{
+        @include scale(220px,220px);
         margin: 10px 10px 0px 10px;
     }
     .profileData{
         @include scale(100%,auto);
-        margin: 4px 0px 10px 0px;
+        margin: 0px 0px 10px 0px;
         text-align: center;
         font-size: small;
         .email{
@@ -160,6 +161,10 @@
         width: 700px;
         margin: 5px 5px 5px 5px;
     }
+    .profilePicture{
+        @include scale(200px,200px);
+        margin: 20px 10px 20px 20px;
+    }
 }
 
 @media screen and (min-width:1200px){
@@ -169,7 +174,8 @@
     .reactorLogo,.reactorLogoVectorial{
         @include scale(200px,200px);
     }
-    .profilePicture,.reactorLogo,.reactorLogoVectorial{
+    .reactorLogo,.reactorLogoVectorial{
+        @include scale(200px,200px);
         margin: 20px 10px 20px 20px;
     }
     .proyectCard{
