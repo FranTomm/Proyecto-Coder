@@ -20,12 +20,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*filter: grayscale(50%);*/
     filter: brightness(70%);
     filter: opacity(95%);
     transition: filter 1s ease-in-out;
     &:hover{
-       /* filter:grayscale(0);*/
         filter: opacity(100%);
     }
     h3{
