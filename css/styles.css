@@ -857,8 +857,15 @@ optgroup {
   }
   .profileData {
     height: auto;
-    width: 95%;
-    margin: 10px 10px 10px 10px;
+    width: 100%;
+    margin: 4px 0px 10px 0px;
+    text-align: center;
+    font-size: small;
+  }
+  .profileData .email {
+    margin-top: 12px;
+    font-size: 12px;
+    letter-spacing: normal;
   }
   .proyectData {
     margin: 10px 20px 20px 20px;
@@ -895,7 +902,7 @@ optgroup {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 5px 5px 5px 0px;
+    margin: 5px 0px 0px 0px;
     justify-content: space-evenly;
   }
 }
@@ -904,10 +911,16 @@ optgroup {
     flex-direction: row;
   }
   .profileData {
-    letter-spacing: 2px;
-    width: 70%;
     height: auto;
+    width: 70%;
     margin: 10px 10px 10px 10px;
+    text-align: left;
+    font-size: medium;
+  }
+  .profileData .email {
+    margin-top: 0;
+    font-size: medium;
+    letter-spacing: 2px;
   }
   /*media query de cards*/
   .card-body {
