@@ -321,7 +321,7 @@ aside {
   letter-spacing: 4px;
   padding: 20px 30px 20px 30px;
   border-radius: 80px;
-  margin: 30px 20px 30px 20px;
+  margin: 30px 10px 30px 10px;
   width: 75%;
 }
 
@@ -849,9 +849,10 @@ optgroup {
 }
 
 @media screen and (min-width: 320px) {
-  .proyectCard {
+  .cardProyect {
+    width: 292px;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
   .profilePicture {
     height: 220px;
@@ -892,8 +893,8 @@ optgroup {
   }
   .card-img-top {
     margin: 5px 5px 0px 5px;
-    height: 310px;
-    width: 310px;
+    height: 280px;
+    width: 280px;
   }
   .card-col {
     display: flex;
@@ -910,8 +911,9 @@ optgroup {
   }
 }
 @media screen and (min-width: 992px) {
-  .proyectCard, .card, .cardProfile {
+  .cardProyect, .card, .cardProfile {
     flex-direction: row;
+    width: auto;
   }
   .profileData {
     height: auto;
@@ -966,9 +968,6 @@ optgroup {
     width: 200px;
     margin: 20px 10px 20px 20px;
   }
-  .proyectCard {
-    width: 700px;
-  }
   .proyectData {
     margin: 20px 20px 20px 10px;
     width: 100%;
@@ -995,12 +994,18 @@ optgroup {
     line-height: 26px;
     text-align: center;
   }
+  iframe {
+    width: auto;
+  }
 }
 @media screen and (min-width: 992px) { /*quiero conservar la barra de navegación que ya tenia hecha para desktop*/
   body {
     grid-template-columns: auto;
     grid-template-rows: 130px 100px auto 110px;
     grid-template-areas: "header" "desktopNav" "article" "footer";
+  }
+  iframe {
+    width: 560px;
   }
 }
 @media screen and (min-width: 1200px) {

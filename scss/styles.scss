@@ -65,7 +65,7 @@ aside{
     letter-spacing: 4px;
     padding: 20px 30px 20px 30px;
     border-radius: 80px;
-    margin: 30px 20px 30px 20px;
+    margin: 30px 10px 30px 10px;
     width: 75%;
 }
 p{
@@ -117,6 +117,9 @@ aside{
         line-height: 26px;
         text-align: center;
     }
+    iframe{
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 992px){/*quiero conservar la barra de navegación que ya tenia hecha para desktop*/
@@ -124,6 +127,9 @@ aside{
         grid-template-columns: auto;
         grid-template-rows: 130px 100px auto 110px;
         grid-template-areas: "header" "desktopNav" "article" "footer";
+    }
+    iframe{
+        width: 560px;
     }
 }
 
