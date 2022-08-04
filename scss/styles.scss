@@ -135,7 +135,7 @@ aside{
 
 @media screen and (min-width: 1200px) {
     body{
-        grid-template-columns: 20% auto;
+        grid-template-columns: 320px auto;
         grid-template-rows: 160px 100px auto 100px;
         grid-template-areas: "header header" "desktopNav desktopNav" "aside article" "footer footer";
     }
