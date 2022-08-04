@@ -20,16 +20,12 @@
     font-size: x-large;
     font-weight: 200;
     padding: 30px 30px 30px 30px;
+    &:not(.collapsed){
+        color:white;
+        font-weight: 400;
+    }
 }
 
-.accordion-button:active,.accordion-button:focus{
-    color:white;
-    font-weight: 400;
-}
-
-.accordion-button:checked,.accordion-button:focus-visible,.accordion-button:visited{
-    color: white;
-}
 .profileData{
     width: auto;
 }
