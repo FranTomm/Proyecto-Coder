@@ -80,6 +80,12 @@ input,select,textarea{
 .searchField{
     background-color: white;
 }
+.searchIcon{
+    $height:28px; /*variables locales*/
+    $width:2*$height;
+    @include scale($width,$height);
+    margin-left:2px;
+}
 iframe{
     margin: 10px 10px 10px 10px;
 }

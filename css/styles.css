@@ -339,6 +339,13 @@ input, select, textarea {
   background-color: white;
 }
 
+.searchIcon {
+  /*variables locales*/
+  height: 28px;
+  width: 56px;
+  margin-left: 2px;
+}
+
 iframe {
   margin: 10px 10px 10px 10px;
 }
