@@ -95,7 +95,7 @@
     }
         /*media query de cards*/
     .card-body{
-        @include scale(100%,auto);
+        @include scale(auto,auto);
         h4{
             text-align: center;
             margin-left: 0px;

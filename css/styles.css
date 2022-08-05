@@ -744,7 +744,7 @@ optgroup {
   /*media query de cards*/
   .card-body {
     height: auto;
-    width: 100%;
+    width: auto;
   }
   .card-body h4 {
     text-align: center;
