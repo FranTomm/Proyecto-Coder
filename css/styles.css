@@ -323,6 +323,9 @@ aside {
   margin: 30px 10px 30px 10px;
   width: 75%;
 }
+.enfasisButtonBody:hover {
+  color: rgb(48, 106, 222);
+}
 
 p {
   margin: 15px 15px 15px 15px;
