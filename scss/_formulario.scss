@@ -23,12 +23,14 @@ fieldset{
     letter-spacing: 3px;
     padding: 10px 10px 10px 10px;
 }
-
 form{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.formContacto{
     margin: 0px -10px 0px 15px;/*el formulario de bootstrap viene roto*/
     padding: 10px 10px 10px 10px;
 }
-
 .form-control,.form-select,.form-check-input{
     background-color: rgb(250, 250, 250);
 }
