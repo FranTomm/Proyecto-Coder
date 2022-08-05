@@ -527,7 +527,7 @@ fieldset {
 }
 
 form {
-  margin: 0px 0px 0px 10px;
+  margin: 0px -10px 0px 15px; /*el formulario de bootstrap viene roto*/
   padding: 10px 10px 10px 10px;
 }
 
